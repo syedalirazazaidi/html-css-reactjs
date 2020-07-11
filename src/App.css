@@ -1,38 +1,220 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: "#3475cc";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  opacity: 0.5;
+}
+.banner .content {
+  position: relative;
+  max-width: 750px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner .content h2 {
+  color: #ffffff;
+  font-size: 60px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner .content p {
+  color: #ffffff;
+  font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  z-index: 10000;
+}
+.banner header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.banner header .toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url(./Images/ui.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.about .col {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.about .contextBx {
+  background: #162c3b;
+  padding: 100px;
+  width: 50%;
+}
+.heading {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.about .imgBx {
+  background-image: url(./Images/image.svg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.services {
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+}
+.services .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.services .container .serviceBx {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.services .container .serviceBx img {
+  max-width: 100px;
+}
+.services .container .serviceBx h2 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.technology {
+  background: #3f8ffc;
+  width: 100%;
+  padding: 100px;
+  padding-top: 300px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.technology .contextBx {
+  max-width: 800px;
+}
+.technology .imgBx {
+  max-width: 100px;
+}
+.technology .imgBx img {
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.client {
+  background: #162c3b;
+  padding: 100px;
+  text-align: center;
+}
+.client .imgBx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.client .imgBx img {
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+.client .imgBx img:hover {
+  opacity: 1;
+}
+.testinomials {
+  position: relative;
+  padding: 100px;
+  background: #12222d;
+  text-align: center;
+}
+.testinomials .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.testinomials .container .contentBx {
+  background: #fff;
+  padding: 60px 50px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.testinomials .container .contentBx p {
+  font-style: italic;
+}
+.testinomials .container .contentBx h3 {
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+  color: #3f8ffc;
+}
+.contact {
+  padding: 100px;
+  background: #162c3b;
+  text-align: center;
+}
+.imgBx2 {
+  background: url(./Images/image.svg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+.form .inputBx input {
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
